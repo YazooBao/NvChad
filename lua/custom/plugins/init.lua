@@ -25,11 +25,29 @@ return {
     override_options = overrides.nvimtree,
   },
 
+  ["NvChad/ui"] = {
+    override_options = overrides.ui,
+  },
+
   -- Install a plugin
   ["max397574/better-escape.nvim"] = {
     event = "InsertEnter",
     config = function()
       require("better_escape").setup()
+    end,
+  },
+
+  -- Install Leap
+  ["ggandor/leap.nvim"] = {
+    config = function ()
+      require("leap").add_default_mappings()
+    end,
+  },
+
+  -- Install markdown-preview
+  ["iamcco/markdown-preview.nvim"] = {
+    config = function ()
+      require "custom.plugins.markdown-preview"
     end,
   },
 
