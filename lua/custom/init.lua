@@ -2,6 +2,12 @@ local opt = vim.opt
 local g = vim.g
 local autocmd = vim.api.nvim_create_autocmd
 
+require('packer').init({
+  git = {
+    default_url_format = 'git@github.com:%s'
+  }
+})
+
 -- Auto resize panes when resizing nvim window
 -- autocmd("VimResized", {
 --   pattern = "*",

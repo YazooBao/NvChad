@@ -46,9 +46,11 @@ return {
 
   -- Install markdown-preview
   ["iamcco/markdown-preview.nvim"] = {
-    config = function ()
-      require "custom.plugins.markdown-preview"
-    end,
+    -- config = function ()
+    --   require "custom.plugins.markdown-preview"
+    -- end,
+    run = "cd app && yarn install",
+    ft = { "markdown" },
   },
 
   -- code formatting, linting etc
