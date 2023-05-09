@@ -36,7 +36,7 @@ vim.g.mkdp_browser = "microsoft-edge-stable"
 
 -- set to 1, echo preview page url in command line when open preview page
 -- default is 0
-vim.g.mkdp_echo_preview_url = 0
+vim.g.mkdp_echo_preview_url = 1
 
 -- a custom vim function name to open preview page
 -- this function will receive url as param

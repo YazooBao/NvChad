@@ -14,4 +14,10 @@ M.leap = {
   },
 }
 
+-- M.markdown_preview = {
+--   n = {
+--     ["<leader>md"] = { "<cmd> MarkdownPreviewToggle<CR>", "toggle markdown preview" },
+--   }
+-- }
+
 return M
